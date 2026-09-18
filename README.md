@@ -61,3 +61,5 @@ Through this project, you will be able to develop your ability to conceptualize 
 ![Android App Multi-Language Support](/docs/assets/Android_App_Multi-Language_Support_teste2.png)
 
 [LICENSE](/LICENSE)
+
+See [original repository](https://github.com/digitalinnovationone/meu-primeiro-app-dio).
