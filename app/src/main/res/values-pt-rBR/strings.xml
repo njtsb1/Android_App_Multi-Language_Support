@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">App Android com Suporte a Vários Idiomas</string>
+    <string name="greeting">Olá, bem-vindo!</string>
+    <string name="description">Este app demonstra internacionalização no Android.</string>
+    <string name="change_language">Mudar idioma</string>
+    <string name="language_en">Inglês</string>
+    <string name="language_pt">Português (Brasil)</string>
+    <string name="language_es">Espanhol</string>
+    <string name="ai_translate">Traduzir com fallback de IA</string>
+    <string name="translated_text_label">Texto traduzido:</string>
+</resources>
