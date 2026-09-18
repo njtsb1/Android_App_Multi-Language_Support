@@ -1,0 +1,44 @@
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local configuration
+local.properties
+*.iml
+.idea/
+.idea/**
+
+# Kotlin/Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Android
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.ap_
+*.aab
+
+# IntelliJ
+out/
+.DS_Store
+
+# Keystore files
+*.jks
+*.keystore
+
+# Log files
+*.log
+
+# Generated files
+generated/
+**/generated/
+
+# Misc
+.gradle/
+.gradle-cache/
+*.keystore
