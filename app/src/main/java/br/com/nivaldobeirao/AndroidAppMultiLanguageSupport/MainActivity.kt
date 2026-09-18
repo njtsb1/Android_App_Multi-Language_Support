@@ -8,7 +8,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //O desafio sera criar uma valor dentro do string.xml
-        // E trocar o texto do xml e tornar internacional (Ingles, Espanhol, etc...)
+        //The challenge will be to create a value in strings.xml
+        // And change the XML text to make it international (English, Spanish, etc...)
     }
 }
