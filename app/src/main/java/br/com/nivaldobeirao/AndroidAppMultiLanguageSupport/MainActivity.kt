@@ -1,4 +1,4 @@
-package br.com.igorbag.AndroidAppMultiLanguageSupport
+package br.com.nivaldobeirao.AndroidAppMultiLanguageSupport
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

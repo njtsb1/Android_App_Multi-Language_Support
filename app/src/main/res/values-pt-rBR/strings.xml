@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">App Android com Suporte a Vários Idiomas</string>
+    <string name="app_name">Aplicativo Android com Suporte a Vários Idiomas</string>
     <string name="greeting">Olá, bem-vindo!</string>
     <string name="description">Este app demonstra internacionalização no Android.</string>
     <string name="change_language">Mudar idioma</string>

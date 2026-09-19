@@ -1,4 +1,4 @@
-package br.com.igorbag.AndroidAppMultiLanguageSupport
+package br.com.nivaldobeirao.AndroidAppMultiLanguageSupport
 
 import org.junit.Test
 
