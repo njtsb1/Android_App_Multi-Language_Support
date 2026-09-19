@@ -6,10 +6,11 @@ Through this project, you will be able to develop your ability to conceptualize 
 
 ## Features
 
-- Localized string resources for **English**, **Portuguese (Brazil)**, and **Spanish**
-- Runtime language switching with persistence
-- Activity UI showing localized strings and an AI translation fallback example
-- Simple, modular structure suitable for extension and testing
+- **Dark / Light mode** with moon/sun icons; dark is the default and user preference is persisted in `localStorage`.
+- **Multi-language UI** (EN-US, PT-BR, ES) with runtime switching and persistence.
+- **Accessible controls**: keyboard operable, ARIA attributes, skip link, focus styles.
+- **Responsive layout**: works on desktop, tablet and smartphone.
+- **Simulated AI translation fallback**: a small demo function that returns translated text; replace with a real API if needed.
 
 ## Requirements
 
@@ -23,46 +24,28 @@ Through this project, you will be able to develop your ability to conceptualize 
 
 ## Additional Technologies
 
-- **HTML**:
-- **CSS**:
-- **JavaScript**:
+- **HTML**: semantic HTML with accessible controls and ARIA attributes.
+- **CSS**: CSS variables, responsive layout, dark/light theme support.
+- **JavaScript**: language switching, theme persistence, simulated AI translation fallback.
 
-## Setup
+## How to use
 
-1. Clone or copy the project into Android Studio.
-2. Ensure `local.properties` points to your Android SDK path (Android Studio usually creates this).
-3. Build the project using **Build > Make Project**.
+1. Open `index.html` in a browser (no server required).
+2. Use the language selector to switch UI language.
+3. Toggle theme using the moon/sun button. The choice is saved for future visits.
+4. Click "Translate with AI fallback" to see a simulated translated string for the selected language.
 
-## Run
+## Accessibility notes
 
-- Run the app on an emulator or physical device.
-- Use the **Change Language** button to switch languages at runtime. The app restarts the activity to apply the selected locale and persists the choice.
+- The page includes a skip link for keyboard users.
+- Buttons and controls have visible focus styles and `aria` attributes.
+- `aria-live` regions announce translation results for assistive technologies.
 
-## How Language Switching Works
+## Extending the demo
 
-- `LocaleManager` persists the selected language code in `SharedPreferences`.
-- The application base context is updated with the selected `Locale` so resources are loaded from the matching `values-` folder.
-- The sample restarts the `MainActivity` after a language change to refresh UI strings.
-
-## Adding or Updating Translations
-
-1. Add a new `values-<locale>` resource folder (for example `values-fr` for French).
-2. Create or update `strings.xml` inside that folder with translated string keys matching the default `strings.xml`.
-3. Test by selecting the new language in the app or changing the device language.
-
-## AI Translation Fallback
-
-- `AiTranslator` in the sample is a simulated translator that returns a mapped string for demo purposes.
-- To integrate a real translation API:
-  - Replace `AiTranslator.translateWithFallback` with a suspend function that calls a translation service using Retrofit or OkHttp.
-  - Keep the function `suspend` and call it from a coroutine scope.
-  - Secure API keys by using a backend proxy or secure storage; do not hardcode keys in the app.
-
-## Notes and Best Practices
-
-- For Android 13 and above, consider using `AppCompatDelegate.setApplicationLocales()` for per-app language preferences.
-- Cache dynamic translations to reduce network calls and improve offline behavior.
-- Use lint and Android Studio inspections to find missing translations and resource issues.
+- Replace the `aiTranslate` function in `script.js` with an asynchronous call to a translation API (e.g., via `fetch`).
+- Add more languages by extending the `TRANSLATIONS` object and adding options to the `<select>` element.
+- Improve persistence by storing a timestamped cache of translations.
 
 ![Android App Multi-Language Support](./assets/Android_App_Multi-Language_Support_teste2.png)
 
